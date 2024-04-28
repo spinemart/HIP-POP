@@ -1,0 +1,17 @@
+#HIP-POP: HI Probe POPulator. Trieste 2020 
+#Marta Spinelli (INAF OATs) - Acknowledgments: Tiago Castro (INAF OATs), Emiliano Munari (INAF OATs)
+
+#The code creates a data cube of 21cm temperature brightness maps using a Mhi-Mhalo relation from the output of the semi-analytic model GAEA (see Spinelli et al 2020,2022).
+
+#### Example to run the code ###
+
+#Read Pinocchio lightcone files (normally divided in Ntasks files) and find halos at the selected redshift
+python read_Pinocchio_plc.py --plc_dir=/pinocchio/ --pname=pinocchio.name.plc.out --Ntask=32 --fmin=960 --fmax=970 --Nf=10 --verbose=True --outname=TEST --outdir=../outdir/
+
+#Input frequencies info are saved into outname_frequencies.txt
+
+#Create the final temperature brightness maps using healpix pixelization
+python create_maps_from_pfiles.py --fmin=960. --fmax=970. --Nf=10 --verbose=True --outname=TEST --inname=TEST
+
+#to visualize the output and create maps of a selected patch in the sky see example notebook: HIP-POP-anamap.py
+
