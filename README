@@ -1,5 +1,5 @@
 #HIP-POP: HI Probe POPulator. Trieste 2020 
-#Marta Spinelli (INAF OATs) - Acknowledgments: Tiago Castro (INAF OATs), Emiliano Munari (INAF OATs)
+#Marta Spinelli (INAF OATs/Nice Obs.)  and Matteo VIel (SISSA) - Acknowledgments: Tiago Castro (INAF OATs), Emiliano Munari (INAF OATs)
 
 #The code creates a data cube of 21cm temperature brightness maps using a Mhi-Mhalo relation from the output of the semi-analytic model GAEA (see Spinelli et al 2020,2022).
 
